@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import Carrousel from "../Carrousel";
 import Spacer from "../Spacer";
 import ExecutiveContent from "../ExecutiveContent";
+import Banner from "../Banner";
 import firstBanner from "../../assets/img/ikesoft1.jpg";
 
 const Home = () => {
@@ -13,8 +14,9 @@ const Home = () => {
       <Carrousel />
       <Spacer />
       <ExecutiveContent />
-      
+      <Banner img={firstBanner} alt="Ikesoft 1" />
       <Spacer />
+      
     </React.Fragment>
   );
 };

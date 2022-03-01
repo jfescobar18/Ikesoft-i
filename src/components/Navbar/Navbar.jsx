@@ -14,7 +14,7 @@ const Navbar = () => {
       <header className="navbar">
         <div className="brand">
           <a href="/">
-            <img src={logo} />
+            <img src={logo} alt="ikesoft" />
           </a>
         </div>
         <nav>
@@ -28,10 +28,10 @@ const Navbar = () => {
           className={`hamburger-icon ${navbarCollapsed ? "open" : ""}`}
           onClick={toggleNavbar}
         >
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <ul class="mobile-menu">
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+          <ul className="mobile-menu">
             <li>
               <a href="/home">Home</a>
             </li>

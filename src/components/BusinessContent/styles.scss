@@ -1,0 +1,20 @@
+.business-content {
+  padding: 0 30px;
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  span {
+    display: block;
+    margin-top: 17px;
+    font-size: 18px;
+    small {
+      font-size: 12px;
+      display: block;
+    }
+  }
+}

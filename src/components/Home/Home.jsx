@@ -9,6 +9,7 @@ import firstBanner from "../../assets/img/ikesoft1.jpg";
 import BusinessContent from "../BusinessContent";
 import secondBanner from "../../assets/img/ikesoft2.jpg";
 import Clients from "../Clients";
+import Contact from "../Contact";
 
 const Home = () => {
   return (
@@ -23,6 +24,9 @@ const Home = () => {
       <Banner img={secondBanner} alt="Ikesoft 2" />
       <Spacer />
       <Clients />
+      <Spacer />
+      <Contact />
+      <Spacer />
     </React.Fragment>
   );
 };

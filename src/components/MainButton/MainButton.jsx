@@ -4,7 +4,7 @@ import "./styles.scss";
 const MainButton = (props) => {
   return (
     <React.Fragment>
-      <button onClick={props.onClick} className="mainButton">
+      <button type={props.type} onClick={props.onClick} className="mainButton">
         {props.text}
       </button>
     </React.Fragment>

@@ -72,7 +72,7 @@ const Carrousel = () => {
           </div>
         </div>
         <div className="buttonContainer">
-          <MainButton onClick={() => {}} text={"Contratar"} />
+          <MainButton type={"button"} onClick={() => {}} text={"Contratar"} />
         </div>
         <div className="controls">
           <div className={`dot ${slideActive == 0 ? "active" : ""}`}>

@@ -1,0 +1,19 @@
+.content-container {
+    padding: 0 30px;
+    h1 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 15px;
+      &:last-child {
+        font-size: 12px;
+      }
+    }
+  }
+  
+  .image-banner {
+      width: 100%;
+      margin-top: 75px;
+  }

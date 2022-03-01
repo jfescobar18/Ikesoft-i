@@ -53,7 +53,7 @@
           background-color: #000;
           padding: 15px;
           width: 90%;
-          min-height: 256px;
+          max-height: 274px;
           margin: 30px auto 0;
           span {
             display: block;
@@ -65,7 +65,7 @@
             }
             &.to-bottom {
               text-align: center;
-              margin-top: 174px;
+              margin-top: 145px;
             }
             small {
               font-weight: 300;
@@ -85,10 +85,10 @@
     margin-top: 20px;
   }
   .controls {
-    position: absolute;
     display: -webkit-box;
     margin-top: 20px;
-    left: calc(50% - 20px);
+    width: 50%;
+    margin-left: calc(25% + 60px);
     .dot {
       width: 10px;
       height: 10px;
@@ -167,12 +167,12 @@
 }
 
 @media (min-width: 515px) {
-    .carrousel {
-      .buttonContainer {
-        margin-top: 50px;
-      }
+  .carrousel {
+    .buttonContainer {
+      margin-top: 50px;
     }
   }
+}
 
 @media (min-width: 545px) {
   .carrousel {

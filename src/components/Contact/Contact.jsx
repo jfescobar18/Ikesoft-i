@@ -4,7 +4,11 @@ import { useForm } from "react-hook-form";
 import MainButton from "../MainButton";
 
 const Contact = () => {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   const onSubmit = (data) => {
     console.log("data", data);
@@ -19,19 +23,19 @@ const Contact = () => {
             <label htmlFor="name">
               Nombre*
               <input
-                className=""
+                className={errors?.name ? "not-valid" : ""}
                 type="text"
                 name="name"
-                {...register("name")}
+                {...register("name", { required: true })}
               />
             </label>
             <label htmlFor="email">
               Correo electrónico*
               <input
-                className=""
+                className={errors?.email ? "not-valid" : ""}
                 type="email"
                 name="email"
-                {...register("email")}
+                {...register("email", { required: true })}
               />
             </label>
           </div>

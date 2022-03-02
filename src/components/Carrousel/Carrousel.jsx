@@ -14,6 +14,7 @@ const Carrousel = () => {
           name="carrousel"
           type="radio"
           checked={slideActive == 0}
+          onChange={() => {}}
         />
         <div
           className="slide"
@@ -48,6 +49,7 @@ const Carrousel = () => {
           name="carrousel"
           type="radio"
           checked={slideActive == 1}
+          onChange={() => {}}
         />
         <div
           className="slide"

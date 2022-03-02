@@ -18,14 +18,17 @@ const Home = () => {
       <Navbar />
       <Carrousel />
       <Spacer />
+      <span className="slideTo" id="plans"></span>
       <ExecutiveContent />
       <Banner img={firstBanner} alt="Ikesoft 1" />
       <Spacer />
       <BusinessContent />
       <Banner img={secondBanner} alt="Ikesoft 2" />
       <Spacer />
+      <span className="slideTo" id="clients"></span>
       <Clients />
       <Spacer />
+      <span className="slideTo" id="contact"></span>
       <Contact />
       <Spacer />
       <Footer />

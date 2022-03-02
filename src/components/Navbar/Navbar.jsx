@@ -21,9 +21,9 @@ const Navbar = () => {
           <ul>
             <li>
               <a href="#">Home</a>
-              <a href="#">Planes</a>
-              <a href="#">Clientes</a>
-              <a href="#">Contacto</a>
+              <a href="#plans">Planes</a>
+              <a href="#clients">Clientes</a>
+              <a href="#contact">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -37,9 +37,9 @@ const Navbar = () => {
           <ul className="mobile-menu">
             <li>
               <a href="#">Home</a>
-              <a href="#">Planes</a>
-              <a href="#">Clientes</a>
-              <a href="#">Contacto</a>
+              <a href="#plans">Planes</a>
+              <a href="#clients">Clientes</a>
+              <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>

@@ -1,0 +1,38 @@
+.footer-container {
+  img {
+    width: 100%;
+    margin-top: -20px;
+  }
+  .button-container {
+    text-align: center;
+    transform: translateY(90px);
+  }
+  .footer-icons {
+    height: 80px;
+    width: 100%;
+    background-color: #c54802;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -4px;
+    .icon {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      text-align: center;
+      padding-top: 20px;
+      img {
+        width: 22px;
+        height: 22px;
+        margin: 0 auto;
+      }
+      p {
+        margin-top: 4px;
+        font-size: 12px;
+      }
+    }
+  }
+}

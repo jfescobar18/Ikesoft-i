@@ -10,6 +10,7 @@ import BusinessContent from "../BusinessContent";
 import secondBanner from "../../assets/img/ikesoft2.jpg";
 import Clients from "../Clients";
 import Contact from "../Contact";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <Spacer />
       <Contact />
       <Spacer />
+      <Footer />
     </React.Fragment>
   );
 };

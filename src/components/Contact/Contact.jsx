@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles.scss";
 import { useForm } from "react-hook-form";
 import MainButton from "../MainButton";
@@ -7,11 +7,28 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
+  useEffect(() => {
+    reset(null);
+  }, []);
+
   const onSubmit = (data) => {
-    console.log("data", data);
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    };
+
+    fetch("http://ikesofti.com/email.php", requestOptions)
+      .then((response) => {
+        reset();
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (

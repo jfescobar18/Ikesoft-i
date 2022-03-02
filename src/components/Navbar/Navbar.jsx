@@ -20,7 +20,10 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <a href="#">Home</a>
+              <a href="#">Planes</a>
+              <a href="#">Clientes</a>
+              <a href="#">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -33,7 +36,10 @@ const Navbar = () => {
           <div className="bar3"></div>
           <ul className="mobile-menu">
             <li>
-              <a href="/home">Home</a>
+              <a href="#">Home</a>
+              <a href="#">Planes</a>
+              <a href="#">Clientes</a>
+              <a href="#">Contacto</a>
             </li>
           </ul>
         </div>

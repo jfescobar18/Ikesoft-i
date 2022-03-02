@@ -75,12 +75,12 @@ const Carrousel = () => {
           <MainButton type={"button"} onClick={() => {}} text={"Contratar"} />
         </div>
         <div className="controls">
-          <div className={`dot ${slideActive == 0 ? "active" : ""}`}>
+          <span className={`dot ${slideActive == 0 ? "active" : ""}`}>
             <label htmlFor="slide-0" onClick={() => setSlideActive(0)}></label>
-          </div>
-          <div className={`dot ${slideActive == 1 ? "active" : ""}`}>
+          </span>
+          <span className={`dot ${slideActive == 1 ? "active" : ""}`}>
             <label htmlFor="slide-1" onClick={() => setSlideActive(1)}></label>
-          </div>
+          </span>
         </div>
       </section>
     </React.Fragment>

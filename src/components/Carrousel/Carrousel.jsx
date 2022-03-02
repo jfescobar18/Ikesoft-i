@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./styles.scss";
 import MainButton from "../MainButton/MainButton";
-import firstSlide from "../../assets/img/slide1.jpg";
-import secondSlide from "../../assets/img/slide2.jpg";
+import firstSlide from "../../assets/img/slide1.webp";
+import secondSlide from "../../assets/img/slide2.webp";
 
 const Carrousel = () => {
   const [slideActive, setSlideActive] = useState(0);

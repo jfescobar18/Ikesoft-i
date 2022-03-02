@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import footerImage from "../../assets/img/footer.jpeg";
+import footerImage from "../../assets/img/footer.webp";
 import MainButton from "../MainButton";
 import phoneIcon from "../../assets/img/phone.svg";
 import emailIcon from "../../assets/img/email.svg";

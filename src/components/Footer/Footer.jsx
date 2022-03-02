@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.scss";
 import footerImage from "../../assets/img/footer.webp";
+import footerImageDesk from "../../assets/img/footer_desk.webp";
 import MainButton from "../MainButton";
 import phoneIcon from "../../assets/img/phone.svg";
 import emailIcon from "../../assets/img/email.svg";
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    window.screen.width <= 767 ? setIsMobile(true) : setIsMobile(false);
+  }, [window.screen.width]);
+
+  const detectWindowSize = () => {
+    window.innerWidth <= 767 ? setIsMobile(true) : setIsMobile(false);
+  };
+
+  window.onresize = detectWindowSize;
+
   return (
     <React.Fragment>
       <div className="footer-container">
@@ -16,7 +29,7 @@ const Footer = () => {
             text={"Digitalizar mi negocio"}
           />
         </div>
-        <img src={footerImage} alt="Ikersoft footer" />
+        <img src={isMobile ? footerImage : footerImageDesk} alt="Ikersoft footer" />
         <div className="footer-icons">
           <div className="icon">
             <img src={phoneIcon} alt="phoneIcon" />

@@ -25,11 +25,16 @@ const Footer = () => {
         <div className="button-container">
           <MainButton
             type={"button"}
-            onClick={() => {}}
+            onClick={() => {
+              window.location.href = "/#contact";
+            }}
             text={"Digitalizar mi negocio"}
           />
         </div>
-        <img src={isMobile ? footerImage : footerImageDesk} alt="Ikersoft footer" />
+        <img
+          src={isMobile ? footerImage : footerImageDesk}
+          alt="Ikersoft footer"
+        />
         <div className="footer-icons">
           <div className="icon">
             <img src={phoneIcon} alt="phoneIcon" />

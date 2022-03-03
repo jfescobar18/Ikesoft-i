@@ -6,11 +6,20 @@
     margin-bottom: 40px;
   }
   .row {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
     .client-image {
       text-align: center;
       margin: 0 auto;
       img {
         width: 100%;
+        &.rectangular {
+          max-width: 110px;
+        }
+        &.square {
+          max-width: 80px;
+        }
       }
     }
   }

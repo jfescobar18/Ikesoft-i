@@ -16,34 +16,34 @@ const Clients = () => {
         <h1>Algnos Clientes</h1>
         <div className="row">
           <div className="client-image">
-            <img src={deeco} alt="deeco" />
+            <img className="rectangular" src={deeco} alt="deeco" />
           </div>
           <div className="client-image">
-            <img src={bt} alt="bt" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="client-image">
-            <img src={gala} alt="gala" />
-          </div>
-          <div className="client-image">
-            <img src={premiumGoods} alt="premiumGoods" />
+            <img className="rectangular" src={bt} alt="bt" />
           </div>
         </div>
         <div className="row">
           <div className="client-image">
-            <img src={etr} alt="etr" />
+            <img className="rectangular" src={gala} alt="gala" />
           </div>
           <div className="client-image">
-            <img src={kua} alt="kua" />
+            <img className="rectangular" src={premiumGoods} alt="premiumGoods" />
           </div>
         </div>
         <div className="row">
           <div className="client-image">
-            <img src={zuu} alt="zuu" />
+            <img className="square" src={etr} alt="etr" />
           </div>
           <div className="client-image">
-            <img src={medix} alt="medix" />
+            <img className="square" src={kua} alt="kua" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="client-image">
+            <img className="square" src={zuu} alt="zuu" />
+          </div>
+          <div className="client-image">
+            <img className="square" src={medix} alt="medix" />
           </div>
         </div>
       </div>

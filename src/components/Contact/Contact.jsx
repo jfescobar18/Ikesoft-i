@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import "./styles.scss";
+import { withAlert } from "react-alert";
 import { useForm } from "react-hook-form";
 import MainButton from "../MainButton";
 
-const Contact = () => {
+const Contact = ({ alert }) => {
   const {
     register,
     handleSubmit,
@@ -25,6 +26,11 @@ const Contact = () => {
     fetch("http://ikesofti.com/email.php", requestOptions)
       .then((response) => {
         reset();
+        alert.success("Enviado", {
+          timeout: 5000,
+          onOpen: () => {},
+          onClose: () => {},
+        });
       })
       .catch((error) => {
         console.error(error);
@@ -84,4 +90,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default withAlert()(Contact);

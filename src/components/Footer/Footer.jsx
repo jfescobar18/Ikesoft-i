@@ -36,7 +36,12 @@ const Footer = () => {
           alt="Ikersoft footer"
         />
         <div className="footer-icons">
-          <div className="icon">
+          <div
+            className="icon"
+            onClick={() => {
+              window.open("tel:5540706311", "_parent");
+            }}
+          >
             <img src={phoneIcon} alt="phoneIcon" />
             <p>55 4070 6311</p>
           </div>

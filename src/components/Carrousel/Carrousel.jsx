@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.scss";
 import MainButton from "../MainButton/MainButton";
 import firstSlide from "../../assets/img/slide1.webp";
@@ -6,6 +6,17 @@ import secondSlide from "../../assets/img/slide2.webp";
 
 const Carrousel = () => {
   const [slideActive, setSlideActive] = useState(0);
+  const MINUTE_MS = 5000;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      let slide = slideActive === 1 ? 0 : 1;
+      setSlideActive(slide);
+    }, MINUTE_MS);
+
+    return () => clearInterval(interval);
+  }, [slideActive]);
+
   return (
     <React.Fragment>
       <section className="carrousel">
